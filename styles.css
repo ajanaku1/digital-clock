@@ -1,0 +1,78 @@
+/* styling the body to center all items */
+body {
+    margin: 0;
+    height: 100vh;
+    background: url("images/eve.jpg") no-repeat center center/ cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-family: sans-serif;
+}
+
+/* styling the h2 */
+h2 {
+    font-size: 32px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* styling the clock container */
+.clock {
+    display: flex;
+}
+
+/* styling the 4 containers directly within the clock */
+.clock>div {
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 48px;
+    background-color: #372e29;
+    opacity: .8;
+    border-radius: 5px;
+}
+
+/* styling the hour minute and second container */
+#hour, #minute, #second {
+    height: 100px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* styling the description text */
+.clock .text {
+    width: 80px;
+    font-size: 14px;
+    text-align: center;
+    padding: 5px;
+    background-color: 	#726255;
+    opacity: .7;
+    text-transform: uppercase;
+    border-radius: 4px;
+}
+
+/* styling the am/pm identifier cotainer */
+.clock .ampm {
+    background-color: transparent;
+    position: relative;
+    width: 60px;
+}
+
+/* styling the am/pm identifier */
+.clock #ampm {
+    width: 60px;
+    height: 30px;
+    font-size: 24px;
+    text-transform: uppercase;
+    background-color: 	#000000;
+    opacity: .8;
+    text-align: center;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 0;
+}
